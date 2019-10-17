@@ -21,7 +21,7 @@ local.properties
 .settings/
 .loadpath
 .recommenders
-
+.dbeaver
 .classpath
 .project
 
@@ -74,8 +74,22 @@ local.properties
 /tmp
 /out-tsc
 
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+# Only exists if Bazel was run
+/bazel-out
+
 # dependencies
+/node
 /node_modules
+
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
 
 # IDEs and editors
 /.idea
@@ -92,6 +106,7 @@ local.properties
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+.history/*
 
 # misc
 /.sass-cache
